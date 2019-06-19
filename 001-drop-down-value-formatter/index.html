@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            var __basePath = '';
+        </script>
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+        </style>
+        <script src="https://unpkg.com/ag-grid-enterprise@21.0.1/dist/ag-grid-enterprise.min.js"></script>
+    </head>
+    <body>
+        <div style="height: 5%;">
+            <select id="country" onchange="countryChanged()">
+                <option value="gb-GB" selected>United Kingdom</option>
+                <option value="de-DE">Germany</option>
+                <option value="en-US">United States</option>
+                <option value="ja-JP">Japan</option>
+            </select>
+        </div>
+        <div id="myGrid" class="ag-theme-balham" style="height: 95%;"></div>
+        <script src="main.js"></script>
+    </body>
+</html>
